@@ -1,4 +1,3 @@
-/* LoginPage.css */
 
 .login-container {
     display: flex;
@@ -21,22 +20,16 @@
 }
 
 .login-form input {
-    width: calc(100% - 40px);
+    width: calc(100% );
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.login-form button {
+.login_button{
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    height:40px;
 }
 
 .login-form button:hover {

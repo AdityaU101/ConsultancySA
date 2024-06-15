@@ -31,7 +31,7 @@
 .register-form button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #2772c3;
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,4 +54,8 @@
 
 .register-form p a:hover {
     text-decoration: underline;
+}
+.reg{
+    color: white;
+    font-size: large;
 }

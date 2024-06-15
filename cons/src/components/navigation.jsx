@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 export const Navigation = () => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -51,15 +52,12 @@ export const Navigation = () => {
               </a>
             </li>
             <li>
-              <a href="">
-                Contact
-              </a>
+              <Link to="/contact">
+              Contact
+              </Link>
             </li>
-            <li>
-            <Link to="/login">
-              <button>
+            <li><Link to="/login">
                 Login
-              </button>
             </Link>
             </li>
           </ul>

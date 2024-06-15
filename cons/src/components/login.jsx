@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import './login.css';
 import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
+
 
 const Login = ({ handleLogin }) => {
   const [username, setUsername] = useState('');
@@ -16,7 +18,7 @@ const Login = ({ handleLogin }) => {
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
-        <h2>Login</h2>
+        <h2>Welcome</h2>
         <input
           type="text"
           placeholder="Username"
@@ -31,7 +33,7 @@ const Login = ({ handleLogin }) => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
+        <Button variant="outlined" className='login_button'><Link to="/"><h3>Login</h3></Link></Button>
         <p>
           Don't have an account? <Link to="/register">Register</Link>
         </p>

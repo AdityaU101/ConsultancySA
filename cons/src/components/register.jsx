@@ -11,7 +11,6 @@ const Register = (
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send registration request, for now, let's just log the credentials
     handleRegister(username, password);
   };
     return (
@@ -32,7 +31,7 @@ const Register = (
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Register</button>
+        <button type="submit" className='reg'><Link to="/login">Register</Link></button>
         <p>
           Already have an account?<Link to="/login">Login</Link>
         </p>

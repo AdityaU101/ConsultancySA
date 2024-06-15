@@ -7,6 +7,7 @@ import { About } from './about'
 import { Testimonials } from './testimonials'
 import { Services } from './services'
 import { Team } from './Team'
+import { Contact } from './contact';
 import JsonData from "../data/data.json";
 
 
@@ -23,6 +24,7 @@ const Home = () => {
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       <Testimonials data={landingPageData.Testimonials} />
+      <Contact />
       <Team data={landingPageData.Team} />
     </div>
   )
